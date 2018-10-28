@@ -1,5 +1,5 @@
 <?php
-$pageTitle = __('Manuscripts');
+$pageTitle = __('Documents');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 
@@ -16,8 +16,8 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 <?php if ($total_results > 0): ?>
 
 <?php
-# $sortLinks[__('Title')] = 'Dublin Core,Title';
 $sortLinks[__('Sender')] = 'Dublin Core,Creator';
+$sortLinks[__('Recipient')] = 'Dublin Core,Contributor';
 $sortLinks[__('Date')] = 'Dublin Core,Date';
 ?>
 <div id="sort-links">
