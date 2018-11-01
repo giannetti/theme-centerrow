@@ -8,11 +8,15 @@ html {
 }
 
 a {
-    color: $red;
+    color: $brown;
     text-decoration: none;
 
     &:hover {
         text-decoration: underline;
+
+        &:active a {
+            color: $lightblue;
+        }
     }
 }
 

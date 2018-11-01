@@ -37,17 +37,6 @@ $hasImages = (count($images) > 0);
     <?php endforeach; ?>
 <?php endif; ?>
 
-<?php $transcription = metadata('item', array('Item Type Metadata', 'Transcription'));
-    if ($transcription): ?>
-<div id="dublin-core-title" class="element">
-    <h3>Transcription</h3>
-    <div class="element-text">
-        <?php echo $transcription; ?>
-        <p style="text-align: center;">&#167;</p>
-    </div>
-</div>
-<?php endif; ?>
-
 <?php echo all_element_texts('item'); ?>
 
 <!-- If the item belongs to a collection, the following creates a link to that collection. -->
