@@ -8,16 +8,16 @@ html {
 }
 
 a {
-    color: $brown;
+    color: $red;
     text-decoration: none;
 
     &:hover {
-        text-decoration: underline;
-
-        &:active a {
-            color: $lightblue;
-        }
+        text-decoration: underline; 
+        color: $lightblue;
     }
+    &:active {
+          color: $lightblue;
+        }
 }
 
 h1, h2, h3, h4, h5, h6 {
